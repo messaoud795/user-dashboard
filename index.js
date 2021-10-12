@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === "production") {
   app.get("*", (req, res, next) => {
     let url = req.originalUrl;
     if (!url.startsWith("/api/")) {
+      let __dirname = path.resolve(path.dirname(""));
       res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
       return;
     }
