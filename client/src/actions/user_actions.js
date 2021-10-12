@@ -28,15 +28,11 @@ export const addUser = (data) => {
 //load all users from the back end
 export const loadUsers = () => {
   return async (dispatch) => {
-    const testData1 = "c1fc4856-5c70-403f-bb6d-d67ec006468b";
-    const testData2 = "0a8625b3-ca61-4d7b-9eb1-05dad7b0dd91";
     try {
       dispatch({ type: USER_ACTION_START });
-      const { data } = await axios.get("/api/users/");
-      //data created while testing api , to be excluded from final result
-      let users = await data.users.filter(
-        (user) => user.id !== testData1 && user.id !== testData2
-      );
+      const {
+        data: { users },
+      } = await axios.get("/api/users/");
       //tansform the string to data type
       for (var i in users) {
         users[i].dateOfBirth = parseISO(users[i].dateOfBirth);
