@@ -1,0 +1,23 @@
+.homePage {
+  padding: 5rem;
+}
+.home__title {
+  margin-bottom: 1.5rem;
+  color: green;
+}
+.homePage__spinner {
+  width: 10rem !important;
+  height: 30vh !important;
+  margin: 4rem !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* phone screen 600px */
+@media (max-width: 37.5em) {
+  .homePage {
+    padding: 2rem;
+  }
+}

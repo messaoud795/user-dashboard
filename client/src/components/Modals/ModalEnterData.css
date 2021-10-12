@@ -1,0 +1,57 @@
+.addBtn {
+  display: block !important;
+  margin: 0 1rem 1rem auto !important;
+}
+
+.EditIcon {
+  color: chartreuse;
+  cursor: pointer;
+  margin-right: 1rem !important;
+  font-size: 2rem !important;
+  margin: 0;
+}
+#form-dialog-title {
+  padding-bottom: 0rem;
+}
+#form-dialog-title h2 {
+  font-size: 2rem !important;
+}
+.ModalEnterData__form {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr)) !important;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  width: 50rem;
+  border-bottom: rgb(184, 178, 178) solid 1px;
+  border-top: rgb(184, 178, 178) solid 1px;
+  padding: 2rem 0;
+  font-size: 3rem !important;
+}
+.ModalEnterData__input input {
+  font-size: 1.6rem !important;
+  height: 5rem !important;
+}
+.ModalEnterData__Btn {
+  font-size: 1.5rem !important;
+  margin-right: 1rem !important;
+}
+.ModalEnterData__survey {
+  display: flex !important;
+  width: 100% !important;
+  flex-direction: column;
+}
+.ModalEnterData__survey * {
+  margin-bottom: 1.3rem;
+}
+
+/* 37.5em=600px */
+@media (max-width: 37.5em) {
+  .ModalEnterData__form {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)) !important;
+    width: 100%;
+  }
+  .ModalEnterData__Btn {
+    font-size: 1rem !important;
+    margin-right: 0.5rem !important;
+  }
+}

@@ -1,0 +1,10 @@
+.ModalDelete__dialogActions {
+  padding: 3rem 6rem !important;
+}
+.deleteIcon {
+  color: red !important;
+}
+
+.ModalDelete__deleteBtn {
+  background-color: red !important;
+}
