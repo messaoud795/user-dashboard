@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js",
+    "install-client": "cd ./client && npm install",
+    "installApp": "npm run install-client && npm install",
+    "start": "node index.js",
+    "client": "cd ./client && npm start",
+    "app": "concurrently --kill-others \"npm run start\" \"npm run client\"",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
